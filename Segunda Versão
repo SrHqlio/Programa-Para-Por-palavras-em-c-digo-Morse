@@ -1,0 +1,82 @@
+import java.util.Scanner;
+
+public class Palavra{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Fale a palavra que você quer transformar em Morse:");
+        String palavra = sc.nextLine().toUpperCase();
+
+        for (int i = 0; i < palavra.length(); i++) {
+            char p = palavra.charAt(i);
+
+            switch (p) {
+                case 'A': System.out.print(".- "); 
+                break;
+                case 'B': System.out.print("-... "); 
+                break;
+                case 'C': System.out.print("-.-. ");
+                break;
+                case 'D': System.out.print("-.. "); 
+                break;
+                case 'E': System.out.print(". ");
+                break;
+                case 'F': System.out.print("..-. ");
+                break;
+                case 'G': System.out.print("--. "); 
+                break;
+                case 'H': System.out.print(".... ");
+                break;
+                case 'I': System.out.print(".. "); 
+                break;
+                case 'J': System.out.print(".--- "); 
+                break;
+                case 'K': System.out.print("-.- "); 
+                break;
+                case 'L': System.out.print(".-.. "); 
+                break;
+                case 'M': System.out.print("-- "); 
+                break;
+                case 'N': System.out.print("-. "); 
+                break;
+                case 'O': System.out.print("--- "); 
+                break;
+                case 'P': System.out.print(".--. "); 
+                break;
+                case 'Q': System.out.print("--.- ");
+                break;
+                case 'R': System.out.print(".-. ");
+                break;
+                case 'S': System.out.print("... "); 
+                break;
+                case 'T': System.out.print("- "); 
+                break;
+                case 'U': System.out.print("..- "); 
+                break;
+                case 'V': System.out.print("...- ");
+                break;
+                case 'W': System.out.print(".-- "); 
+                break;
+                case 'X': System.out.print("-..- "); 
+                break;
+                case 'Y': System.out.print("-.-- "); 
+                break;
+                case 'Z': System.out.print("--.. ");
+                break;
+                case ' ': System.out.print("/ ");
+                case 'Ç':
+                System.out.println("--.-.");
+                break;
+                case 'Á':
+                case 'Ã':
+                System.out.println(".-");
+                break;
+                default: System.out.print("? ");
+            }
+        }
+
+        sc.close();
+    }
+}
+
+//SrHqlio passou por aqui denovo!
